@@ -13,7 +13,10 @@ void division(complex c1, complex c2, complex *c3)
 	double x, y, z;
 
 	if (c2.re == 0 && c2.im == 0)
+	{
 		printf("Division b 0 + 0i isn't allowed.");
+		return;
+	}
 	else
 	{
 		x = c1.re * c2.re + c1.im * c2.im;
